@@ -191,8 +191,8 @@
     const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
     function resizeCanvas() {
-      particlesCanvas.width = window.innerWidth;
-      particlesCanvas.height = window.innerHeight;
+      particlesCanvas.width = document.documentElement.clientWidth;
+      particlesCanvas.height = document.documentElement.clientHeight;
     }
 
     resizeCanvas();

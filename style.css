@@ -70,6 +70,8 @@ html {
   scroll-behavior: smooth;
   font-size: 16px;
   scroll-padding-top: var(--nav-height);
+  overflow-x: hidden;
+  width: 100%;
 }
 
 body {
@@ -78,6 +80,8 @@ body {
   font-family: var(--font-body);
   line-height: 1.7;
   overflow-x: hidden;
+  width: 100%;
+  position: relative;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -1420,7 +1424,6 @@ footer::before {
     bottom: 0;
     width: 100%;
     height: 100vh;
-    height: 100dvh;
     background: rgba(5, 4, 3, 0.97);
     backdrop-filter: blur(24px);
     -webkit-backdrop-filter: blur(24px);
@@ -1465,7 +1468,6 @@ footer::before {
   /* Hero Mobile */
   .hero {
     min-height: 100vh;
-    min-height: 100dvh;
     align-items: center;
   }
 
