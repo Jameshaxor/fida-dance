@@ -710,7 +710,10 @@ nav.scrolled {
 
 .program-card-hiphop { background-image: url('./assets/images/hiphop_class_1776147716546.png'); }
 .program-card-contemporary { background-image: url('./assets/images/hero_dance_1776147773325.png'); }
-.program-card-classical { background-image: url('./assets/images/classical_dance_1776147690313.png'); }
+.program-card-classical { 
+  background-image: url('./assets/images/classical_dance_1776147690313.png'); 
+  background-position: center top; 
+}
 
 .program-card::after {
   content: '';
@@ -1482,6 +1485,10 @@ footer::before {
   .hero-content {
     padding-top: calc(var(--nav-height) + 1rem);
     max-width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
   .hero-overline {
@@ -1758,6 +1765,9 @@ footer::before {
 
   .footer-col {
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
   .footer-col h4 {
@@ -1796,9 +1806,10 @@ footer::before {
     display: none;
   }
 
-  /* Reduce visual noise on mobile */
-  .ambient-orb {
-    opacity: 0.15;
+  /* Kill heavy paint operations on mobile for maximum scroll smoothness */
+  .ambient-orb,
+  body::before {
+    display: none;
   }
 
   .cursor-glow {
