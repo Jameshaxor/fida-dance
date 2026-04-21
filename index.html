@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fida Dance Academy | Premier Dance Studio in Ranchi</title>
+    <meta name="description" content="Discover your rhythm at Fida Dance Academy. Premium classes in Contemporary, Hip-Hop, Indian Classical & more. Located at Vidyapati Nagar Kanke Road, Ranchi.">
+    <meta name="keywords" content="dance academy, Ranchi, dance classes, hip hop, contemporary, Indian classical, Fida Dance">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Ambient Background Orbs -->
+    <div class="ambient-orb ambient-orb-1" aria-hidden="true"></div>
+    <div class="ambient-orb ambient-orb-2" aria-hidden="true"></div>
+    <div class="ambient-orb ambient-orb-3" aria-hidden="true"></div>
+
+    <!-- Cursor Glow -->
+    <div class="cursor-glow" id="cursorGlow" aria-hidden="true"></div>
+
+    <!-- Floating Particles Canvas -->
+    <canvas id="particles-canvas" aria-hidden="true"></canvas>
+
+    <!-- ══════════════════════════════════════════════════════════
+         Navigation
+    ══════════════════════════════════════════════════════════ -->
+    <nav id="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo" id="logo">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: var(--gold);">
+                    <path d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.072-2.143-.224-4.054 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 1 1-14 0c0-1.153.433-2.294 1-3a2.5 2.5 0 0 0 2.5 2.5z"/>
+                </svg>
+                Fida <span>Academy</span>
+            </a>
+            
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#about">Our Story</a></li>
+                <li><a href="#programs">Programs</a></li>
+                <li><a href="#gallery">Studio</a></li>
+                <li><a href="#testimonials">Reviews</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+
+            <button class="menu-toggle" id="menuToggle" aria-label="Toggle Navigation Menu">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="4" y1="8" x2="20" y2="8"></line>
+                    <line x1="4" y1="16" x2="20" y2="16"></line>
+                </svg>
+            </button>
+        </div>
+    </nav>
+
+    <!-- ══════════════════════════════════════════════════════════
+         Hero Section
+    ══════════════════════════════════════════════════════════ -->
+    <header class="hero" id="hero">
+        <div class="hero-bg"></div>
+        <div class="container hero-content">
+            <div class="hero-overline reveal">
+                <span>Est. 2020 — Ranchi, Jharkhand</span>
+            </div>
+            <h1 class="reveal" style="transition-delay: 100ms;">Where Movement<br>Becomes <span class="text-gradient-gold italic">Art</span></h1>
+            <p class="reveal" style="transition-delay: 200ms;">Experience elite dance instruction in a premier environment. We transform raw passion into professional artistry through world-class training.</p>
+            <div class="hero-actions reveal" style="transition-delay: 300ms;">
+                <a href="#programs" class="btn btn-primary" id="cta-explore">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+                    Explore Classes
+                </a>
+                <a href="#contact" class="btn btn-glass" id="cta-schedule">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+                    View Schedule
+                </a>
+            </div>
+
+            <!-- Hero Stats -->
+            <div class="hero-stats reveal stagger-children" style="transition-delay: 500ms;">
+                <div class="hero-stat">
+                    <span class="hero-stat-number" data-count="500">0</span>
+                    <span class="hero-stat-label">Students Trained</span>
+                </div>
+                <div class="hero-stat">
+                    <span class="hero-stat-number" data-count="6">0</span>
+                    <span class="hero-stat-label">Dance Styles</span>
+                </div>
+                <div class="hero-stat">
+                    <span class="hero-stat-number" data-count="5">0</span>
+                    <span class="hero-stat-label">Years of Excellence</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Scroll Indicator -->
+        <div class="scroll-indicator" id="scrollIndicator">
+            <span class="scroll-indicator-text">Scroll</span>
+            <div class="scroll-indicator-line"></div>
+        </div>
+    </header>
+
+    <!-- ══════════════════════════════════════════════════════════
+         About / Our Story Section
+    ══════════════════════════════════════════════════════════ -->
+    <section id="about" class="section-padding">
+        <div class="container">
+            <div class="about-grid">
+                <!-- Left: Image -->
+                <div class="about-image-wrap reveal-left">
+                    <img src="./assets/images/hero_dance_1776147773325.png" alt="Contemporary dancer performing an expressive leap at Fida Dance Academy" loading="lazy">
+                </div>
+
+                <!-- Right: Content -->
+                <div class="about-content reveal-right">
+                    <div class="section-header">
+                        <div class="section-overline">
+                            <span>Our Philosophy</span>
+                        </div>
+                        <h2 class="section-title">Dedicated to the<br><span class="text-gradient-gold italic">Art of Rhythm</span></h2>
+                    </div>
+
+                    <p>Founded on the principle of creative expression and discipline, Fida Dance Academy stands as a beacon for aspiring dancers in the region. We offer world-class facilities and instruction across various disciplines.</p>
+                    <p>Our mission is to nurture talent at every level — from curious beginners to competitive performers — in a welcoming, inclusive environment that celebrates the transformative power of dance.</p>
+
+                    <!-- Founder Quote -->
+                    <div class="founder-quote">
+                        <blockquote>Dance is not just movement; it is the deepest poetry of the soul, expressed through the body.</blockquote>
+                        <div class="founder-info">
+                            <img src="./assets/images/owner_namita_sinha.jpg" alt="Namita Sinha, Founder of Fida Dance Academy">
+                            <div>
+                                <div class="founder-name">Namita Sinha</div>
+                                <div class="founder-role">Founder & Director</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════════════
+         Programs Section
+    ══════════════════════════════════════════════════════════ -->
+    <section id="programs" class="section-padding">
+        <div class="container">
+            <div class="section-header text-center reveal">
+                <div class="section-overline" style="justify-content: center;">
+                    <span>What We Teach</span>
+                </div>
+                <h2 class="section-title">Premium <span class="text-gradient-gold italic">Curriculum</span></h2>
+                <p class="section-subtitle centered">Three distinct pathways to mastering the art of dance, each guided by experienced instructors.</p>
+            </div>
+            
+            <div class="programs-grid stagger-children">
+                <!-- Card 1: Hip-Hop -->
+                <div class="program-card reveal program-card-hiphop" id="card-hiphop">
+                    <span class="program-number">01</span>
+                    <div class="program-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+                    </div>
+                    <h3>Urban & Hip-Hop</h3>
+                    <p>High-energy routines focusing on isolation, musicality, and street styles, led by industry professionals.</p>
+                    <span class="program-tag">Beginner to Advanced →</span>
+                </div>
+
+                <!-- Card 2: Contemporary -->
+                <div class="program-card reveal program-card-contemporary" id="card-contemporary">
+                    <span class="program-number">02</span>
+                    <div class="program-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.24 12.24a6 6 0 0 0-8.49-8.49L5 10.5V19h8.5z"/><line x1="16" y1="8" x2="2" y2="22"/><line x1="17.5" y1="15" x2="9" y2="15"/></svg>
+                    </div>
+                    <h3>Contemporary Art</h3>
+                    <p>Fluid movements combining elements of modern dance, ballet, and expressionistic storytelling.</p>
+                    <span class="program-tag">All Skill Levels →</span>
+                </div>
+
+                <!-- Card 3: Indian Classical -->
+                <div class="program-card reveal program-card-classical" id="card-classical">
+                    <span class="program-number">03</span>
+                    <div class="program-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 3h12l4 6-10 13L2 9z"/></svg>
+                    </div>
+                    <h3>Indian Classical</h3>
+                    <p>Rooted in tradition — Kathak, Bharatanatyam and more. Focusing on mudras, footwork, and expressive abhinaya.</p>
+                    <span class="program-tag">Traditional Mastery →</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════════════
+         Gallery / Atmosphere Section
+    ══════════════════════════════════════════════════════════ -->
+    <section id="gallery" class="section-padding">
+        <div class="container">
+            <div class="section-header text-center reveal">
+                <div class="section-overline" style="justify-content: center;">
+                    <span>Our Space</span>
+                </div>
+                <h2 class="section-title">The <span class="text-gradient-gold italic">Atmosphere</span></h2>
+                <p class="section-subtitle centered">A world-class studio where art comes alive.</p>
+            </div>
+            
+            <div class="gallery reveal-scale">
+                <div class="gallery-item gallery-item-1">
+                    <img src="./assets/images/classical_dance_1776147690313.png" alt="Classical Indian Dancer performing in traditional attire" loading="lazy">
+                    <span class="gallery-item-label">Classical Performance</span>
+                </div>
+                <div class="gallery-item gallery-item-2">
+                    <img src="./assets/images/hiphop_class_1776147716546.png" alt="Urban hip-hop dance class in progress" loading="lazy">
+                    <span class="gallery-item-label">Urban Sessions</span>
+                </div>
+                <div class="gallery-item gallery-item-3">
+                    <img src="./assets/images/studio_interior.png" alt="Premium dance studio interior with warm lighting" loading="lazy">
+                    <span class="gallery-item-label">Our Studio</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════════════
+         Testimonials Section
+    ══════════════════════════════════════════════════════════ -->
+    <section id="testimonials" class="section-padding">
+        <div class="container">
+            <div class="section-header text-center reveal">
+                <div class="section-overline" style="justify-content: center;">
+                    <span>What People Say</span>
+                </div>
+                <h2 class="section-title">Voices of <span class="text-gradient-gold italic">Our Community</span></h2>
+            </div>
+
+            <div class="testimonials-track reveal" style="transition-delay: 200ms;">
+                <!-- Testimonial 1 -->
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                    </div>
+                    <p class="testimonial-text">"My daughter has transformed completely since joining Fida Academy. The classical dance training is authentic and the teachers are incredibly patient and knowledgeable."</p>
+                    <div class="testimonial-author">
+                        <div class="testimonial-avatar">R</div>
+                        <div>
+                            <div class="testimonial-author-name">Ritika Sharma</div>
+                            <div class="testimonial-author-detail">Parent • Kathak Student</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                    </div>
+                    <p class="testimonial-text">"The hip-hop classes are absolutely fire! The energy, the choreography, the vibe — everything is top-notch. Best studio in Ranchi, hands down."</p>
+                    <div class="testimonial-author">
+                        <div class="testimonial-avatar">A</div>
+                        <div>
+                            <div class="testimonial-author-name">Aditya Kumar</div>
+                            <div class="testimonial-author-detail">Student • Hip-Hop Level 3</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 3 -->
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                    </div>
+                    <p class="testimonial-text">"As someone who started dancing at 30, I was nervous. But Fida Academy welcomed me with open arms. The contemporary classes are therapeutic and beautiful."</p>
+                    <div class="testimonial-author">
+                        <div class="testimonial-avatar">P</div>
+                        <div>
+                            <div class="testimonial-author-name">Priya Mehta</div>
+                            <div class="testimonial-author-detail">Adult Student • Contemporary</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 4 -->
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                    </div>
+                    <p class="testimonial-text">"Namita ma'am's vision for the academy is inspiring. The inclusive environment and professional approach make this the best dance school in Jharkhand."</p>
+                    <div class="testimonial-author">
+                        <div class="testimonial-avatar">S</div>
+                        <div>
+                            <div class="testimonial-author-name">Sneha Kumari</div>
+                            <div class="testimonial-author-detail">Performer • All Styles</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════════════
+         Contact Section
+    ══════════════════════════════════════════════════════════ -->
+    <section id="contact" class="section-padding contact-section">
+        <div class="container reveal">
+            <div class="section-header text-center" style="margin-bottom: 2rem;">
+                <div class="section-overline" style="justify-content: center;">
+                    <span>Visit Us</span>
+                </div>
+                <h2 class="section-title">Experience the <span class="text-gradient-gold italic">Studio</span></h2>
+                <div class="values-badges">
+                    <span class="badge">
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="7"/><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/></svg>
+                        Female-Founded
+                    </span>
+                    <span class="badge">
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg>
+                        LGBTQ+ Friendly
+                    </span>
+                    <span class="badge">
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M8 14s1.5 2 4 2 4-2 4-2"/><line x1="9" y1="9" x2="9.01" y2="9"/><line x1="15" y1="9" x2="15.01" y2="9"/></svg>
+                        Kids Friendly
+                    </span>
+                </div>
+            </div>
+
+            <div class="contact-grid">
+                <!-- Location Details -->
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                        </div>
+                        <div>
+                            <h3>Location</h3>
+                            <p>Vidyapati Nagar Kanke, Road<br>Ranchi, Jharkhand 834008</p>
+                            <div class="contact-code">+ Code: C838+Q5</div>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                        </div>
+                        <div>
+                            <h3>Hours</h3>
+                            <p>Open daily<br>Closes <strong style="color: var(--text-primary);">7:00 PM</strong></p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                        </div>
+                        <div>
+                            <h3>Phone</h3>
+                            <p><a href="tel:09234430999" style="color: var(--text-muted); text-decoration: none; transition: color 0.25s;">092344 30999</a></p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CTA Side -->
+                <div class="contact-cta">
+                    <h3>Ready to<br><span class="text-gradient-gold italic">enroll?</span></h3>
+                    <p>Join our community of passionate dancers. Call directly or drop by the studio for a free trial class.</p>
+                    <div class="contact-buttons">
+                        <a href="tel:09234430999" class="btn btn-primary" id="cta-call">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                            Call Now
+                        </a>
+                        <a href="mailto:info@fidadance.com" class="btn btn-glass" id="cta-email">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                            Email Us
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════════════
+         Footer
+    ══════════════════════════════════════════════════════════ -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col" style="max-width: 320px;">
+                    <a href="#" class="logo" style="margin-bottom: 1rem; display: inline-flex;">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: var(--gold);"><path d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.072-2.143-.224-4.054 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 1 1-14 0c0-1.153.433-2.294 1-3a2.5 2.5 0 0 0 2.5 2.5z"/></svg>
+                        Fida <span>Academy</span>
+                    </a>
+                    <p class="footer-tagline">Elevating the art of dance in Ranchi. A premier institute for expressive arts and movement.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="#about">Our Story</a></li>
+                        <li><a href="#programs">Classes & Tuition</a></li>
+                        <li><a href="#gallery">Studio Gallery</a></li>
+                        <li><a href="#testimonials">Reviews</a></li>
+                        <li><a href="#contact">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Get In Touch</h4>
+                    <ul class="footer-links">
+                        <li>
+                            <a href="#">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                                Vidyapati Nagar, Ranchi
+                            </a>
+                        </li>
+                        <li>
+                            <a href="tel:09234430999">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                                092344 30999
+                            </a>
+                        </li>
+                        <li>
+                            <a href="mailto:info@fidadance.com">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                                info@fidadance.com
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Fida Dance Academy. All rights reserved.</p>
+                <p class="designer-credit">Designed by <a href="#" style="color: var(--gold); text-decoration: none; font-weight: 500; transition: opacity 0.25s;">Manu Haxor</a></p>
+                <div class="footer-social">
+                    <a href="#" aria-label="Instagram">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+                    </a>
+                    <a href="#" aria-label="Facebook">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+                    </a>
+                    <a href="#" aria-label="YouTube">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19.1c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.43z"/><polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"/></svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>
